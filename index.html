@@ -461,6 +461,8 @@ var kb = {};
     var csscache = {};
     function Fullscreen(){var a=document.documentElement;a.requestFullscreen?a.requestFullscreen():a.mozRequestFullScreen?a.mozRequestFullScreen():a.webkitRequestFullscreen?a.webkitRequestFullscreen():a.msRequestFullscreen&&a.msRequestFullscreen()}
     f1.oninput = function(){
+        if(j9.checked){idb = 1}
+        j9.disabled ='disabled'
         way = 1;
         if(!f1.files.length) return; 
         var base = "";
